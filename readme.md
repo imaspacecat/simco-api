@@ -11,7 +11,6 @@ in addition, there is a simple cli that allows making direct requests to the api
 git clone https://github.com/imaspacecat/simco-api
 ```
 2. make a virtual environment
-linux:
 ```shell
 python3 -m venv venv
 ```
