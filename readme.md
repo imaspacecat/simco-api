@@ -7,16 +7,16 @@ in addition, there is a simple cli that allows making direct requests to the api
 
 ## Installation
 1. clone the repo
-```
+```shell
 git clone https://github.com/imaspacecat/simco-api
 ```
 2. make a virtual environment
-```
+```shell
 python3 -m venv venv
 ```
 
 3. install the requirements
-```
+```shell
 pip -r requirements.txt 
 ```
 4. create .env with login info in the root of the project
@@ -62,9 +62,9 @@ print(json.dumps(data, indent=4))
     - description: set the password that will be used to log in 
 
 all commands must be passed as arguments to python. examples:
-```
-> python cli.py set-password shrekforlife
-> python cli.py get /v2/companies/me/
+```shell
+python cli.py set-password shrekforlife
+python cli.py get /v2/companies/me/
 ```
 
 
