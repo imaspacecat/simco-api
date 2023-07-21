@@ -53,9 +53,6 @@ class SimCo:
         logi("login request status code: {}".format(login_req.status_code))
         return login_req.status_code == 200
 
-    def get_cookies(self) -> dict:
-        return self.session.cookies.get_dict()
-
     # param path: path of api call
     # example: v2/resources/
     def get_api(self, path: str) -> dict:

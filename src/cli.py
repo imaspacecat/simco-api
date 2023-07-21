@@ -20,9 +20,12 @@ get <api_path>
 
 
 def handle_cmds(cmd: str):
+    if cmd == "help":
+        help()
+        return
     arg2 = sys.argv[2]
     if cmd == "get":
-        print(json.dumps(sim.get_api(arg2)))
+        print(json.dumps(sim.get_api(arg2), indent=4))
     elif cmd == "set-email":
         with open(".env", "w") as f:
             f.write("EMAIL=" + arg2 + "\nPASSWORD=" + password)
@@ -31,8 +34,6 @@ def handle_cmds(cmd: str):
         with open(".env", "w") as f:
             f.write("EMAIL=" + email + "\nPASSWORD=" + arg2)
             print('set password to "{}"'.format(arg2))
-    elif cmd == "help":
-        help()
     else:
         print("command does not exist")
 
