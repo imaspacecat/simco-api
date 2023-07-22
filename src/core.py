@@ -2,7 +2,7 @@ from dotenv import dotenv_values
 import requests as req
 from datetime import datetime, timedelta
 from tzlocal import get_localzone
-import pytz, json
+import json
 from utils import *
 
 

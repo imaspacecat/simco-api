@@ -38,7 +38,7 @@ env_data = dotenv_values(".env")
 email = env_data["EMAIL"]
 password = env_data["PASSWORD"]
 
-# create SimCo object to perform api calls with. 
+# create SimCo object to perform api calls with
 # multiple SimCo objects can be created with independant user sessions
 sim = SimCo(email, password)
 
